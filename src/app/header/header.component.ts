@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Menu } from '../models/menu.model';
+import { MenuService } from '../services/menu.service';
+
 
 @Component({
   selector: 'app-header',
@@ -6,23 +10,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @Input() menu! : Menu;
 
-  isVisibleMenu!: boolean;
-
-  constructor() { }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
-    this.isVisibleMenu = false, {updateOn: 'blur'};
+    this.menu = this.menuService.getMenuIsVisible();
   }
 
   onVisibleMenu(): void {
-    this.isVisibleMenu = true;
+    this.menuService.setMenuIsVisible(true);
+    console.log('1', this.menu);
+
+    console.log('2', this.menu);
   }
 
-  onInvisibleMenu(): void {
-    if(this.isVisibleMenu){
-
-    }
-  }
 
 }

@@ -1,6 +1,6 @@
-<div (click)="onVisibleMenu()" class="header" (click)="onInvisibleMenu">
-  <h4 *ngIf="!isVisibleMenu">Menu</h4>
-  <div *ngIf="isVisibleMenu" class="container">
+<div class="header" (click)="onVisibleMenu()">
+  <h4 *ngIf="!menu.isVisible">Menu</h4>
+  <div *ngIf="menu.isVisible" class="container">
     <button class="button">Accueil</button>
     <button class="button">Mes projets</button>
     <button class="button">Mon parcours</button>
