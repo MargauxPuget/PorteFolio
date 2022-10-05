@@ -1,9 +1,9 @@
-<div class="header" (click)="onInvisibleMenu">
-  <h4 (click)="onVisibleMenu()" *ngIf="!isVisibleMenu">Menu</h4>
+<div (click)="onVisibleMenu()" class="header" (click)="onInvisibleMenu">
+  <h4 *ngIf="!isVisibleMenu">Menu</h4>
   <div *ngIf="isVisibleMenu" class="container">
     <button class="button">Accueil</button>
     <button class="button">Mes projets</button>
-    <button class="button">Mon parcour</button>
+    <button class="button">Mon parcours</button>
     <button class="button">Me contacter</button>
   </div>
 </div><!-- header -->
