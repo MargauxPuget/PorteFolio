@@ -1,0 +1,56 @@
+.header{
+  background-color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  max-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //overflow: hidden; /* Hide scrollbars */
+
+
+  &:hover{
+    font-weight: 300;
+  }
+}
+
+.header .container{
+  animation: 2s ease-in ascend forwards;
+  width: 100%;
+
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 1);
+}
+
+
+.button{
+  background-color: #A8AB1C;
+  font-weight: 200;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 4rem;
+  margin: 15px;
+  box-shadow: 5px 5px 0px #858711;
+}
+
+
+@keyframes ascend {
+  from {
+    transform: translate(0, 200px);
+    opacity: 1;
+  }
+  20%{
+
+  }
+  to {
+    transform: translate(0px, -105px);opacity: 1;
+  }
+}

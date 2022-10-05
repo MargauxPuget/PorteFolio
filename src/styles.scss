@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'sass:color';
+@use 'reset';
+
+
+// == variable == //
+// == color
+$background-color: #A8AB1C;
+$text-light-color: #FFF;
+$text-dark-color: #000;
+
+body, html {
+  margin: 0;
+  background-color: #A8AB1C;
+  color: $text-light-color;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  position: relative;
+  min-height: 90vh;
+  max-height: 90vh;
+
+  .header{
+    position: absolute;
+    min-height: 10vh;
+  }
+}
