@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '../services/header.service';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +10,10 @@ export class HeaderComponent implements OnInit {
 
   isVisibleMenu!: boolean;
 
-  constructor() { }
+  constructor(private headerSercive: HeaderService) {}
 
   ngOnInit(): void {
-    this.isVisibleMenu = false, {updateOn: 'blur'};
+    this.isVisibleMenu =this.headerSercive.getIsVisibleMenu();
   }
 
   onVisibleMenu(): void {
