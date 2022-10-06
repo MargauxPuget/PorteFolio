@@ -23,12 +23,9 @@ button{
 }
 
 .wrapper{
-  position: relative;
-  min-height: 100vh;
 
   .header{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
-    min-height: 10vh;
   }
 }
