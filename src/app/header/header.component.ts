@@ -17,13 +17,9 @@ export class HeaderComponent implements OnInit {
   }
 
   onVisibleMenu(): void {
-    this.isVisibleMenu = true;
-  }
-
-  onInvisibleMenu(): void {
-    if(this.isVisibleMenu){
-
-    }
+    this.headerSercive.toggleIsvisibleMenu();
+    // todo a corriger la ligne précédente change le service, mais rien n'ets dynamique, alors la ligne suivante permette de changer dans le component pour un semblant de dynamisme => manque une observable ?
+    this.isVisibleMenu = !this.isVisibleMenu;
   }
 
 }

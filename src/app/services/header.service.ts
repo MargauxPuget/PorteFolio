@@ -11,4 +11,13 @@ export class HeaderService{
   getIsVisibleMenu(): boolean {
     return this.isVisibleMenu;
   }
+
+  toggleIsvisibleMenu(): void{
+
+    if(this.isVisibleMenu){
+      this.isVisibleMenu = false;
+    }else{
+      this.isVisibleMenu = true;
+    }
+  }
 }
