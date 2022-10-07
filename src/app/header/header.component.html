@@ -1,4 +1,14 @@
 <div (click)="onVisibleMenu()" class="header">
+  <div class="presentation">
+    <h1>Margaux Puget</h1>
+    <p class="age">28 ans</p>
+    <img class="avatar" src="https://formationepgv.com/wp-content/uploads/2020/11/avatar-femme-brune.png" alt="avatar femme">
+    <h2>Développeuse Web</h2>
+    <p class="description">Dynamique, investie, curieuse. Une grande volonté pour aller plus loin.</p>
+    <div class="decoration"></div>
+  </div> <!-- presentation -->
+
+
   <h4 *ngIf="!isVisibleMenu">Menu</h4>
   <div *ngIf="isVisibleMenu" class="container">
     <button class="button">Accueil</button>
