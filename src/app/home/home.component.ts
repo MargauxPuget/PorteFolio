@@ -1,7 +1,4 @@
-import { getLocaleMonthNames } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Observable, tap } from 'rxjs';
-import { HeaderService } from '../services/header.service';
 
 @Component({
   selector: 'app-home',
