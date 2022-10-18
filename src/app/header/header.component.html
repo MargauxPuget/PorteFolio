@@ -9,11 +9,11 @@
   </div> <!-- presentation -->
 
 
-  <h4 *ngIf="!isVisibleMenu">Menu</h4>
-  <div *ngIf="isVisibleMenu" class="container">
-    <button class="button">Accueil</button>
-    <button class="button">Mes projets</button>
-    <button class="button">Mon parcours</button>
-    <button class="button">Me contacter</button>
+  <h4 *ngIf="!isVisibleMenu">Menu</h4><!--  -->
+  <div *ngIf="isVisibleMenu" class="container"><!--  -->
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="link">Accueil</a>
+    <a routerLink="projects" routerLinkActive="active"  class="link">Mes projets</a>
+    <a class="link" routerLink="parcours" routerLinkActive="active">Mon parcours</a>
+    <a class="link" routerLink="contact" routerLinkActive="active">Me contacter</a>
   </div>
 </div><!-- header -->
