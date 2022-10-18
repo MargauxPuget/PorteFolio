@@ -1,7 +1,18 @@
 .home{
   text-align: center;
 
+
+
   .presentation {
+
+  // todo nécessaire à toutes les pages
+  @media (min-width: 600px) {
+    position: relative;
+    float: right;
+    // on prend 100% de la largeur - les 200px de menu - les 15px de scroll bar
+    width: calc(100vw - 200px - 15px);
+  }
+
     .text{
       margin: 1rem;
 
@@ -56,6 +67,11 @@
 
     @media (min-width: 600px) {
       font-size: 60px;
+      // todo nécessaire à toutes les pages
+      position: relative;
+      float: right;
+      // on prend 100% de la largeur - les 200px de menu - les 15px de scroll bar
+      width: calc(100vw - 200px - 15px);
     }
   }
 
@@ -69,6 +85,13 @@
       font-weight: 200;
       width: 60%;
       text-align: center;
+
+      // todo nécessaire à toutes les pages
+      position: relative;
+      float: right;
+      // on prend 100% de la largeur - les 200px de menu - les 15px de scroll bar
+      width: calc(100vw - 200px - 15px);
+
     }
   }
 }
