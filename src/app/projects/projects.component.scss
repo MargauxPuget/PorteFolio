@@ -12,7 +12,6 @@ h1{
 }
 
 .project{
-
   margin: 20px 0px;
   background-color: #858711;
   display: flex;
@@ -24,11 +23,7 @@ h1{
   }
   font-size: 18px;
 
-  img{
-    width: 30vw;
-    background-size: cover;
-    border-radius: 0 5px 5px 0;
-  }
+
 
   .presentation{
     text-align: center;
@@ -73,10 +68,19 @@ h1{
       }
     }
 
+  }
+
+  .about{
+    img{
+      width: 40vw;
+      height: 200px;
+      background-size: cover;
+      border-radius: 0 5px 5px 0;
+    }
     .link{
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 100%;
       margin: auto;
 
       a{
