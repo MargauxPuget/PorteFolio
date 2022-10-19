@@ -1,0 +1,13 @@
+.contact{
+  .p{
+    // todo nécessaire à toutes les pages
+    @media (min-width: 600px) {
+      position: relative;
+      float: right;
+      // on prend 100% de la largeur - les 200px de menu - les 15px de scroll bar
+      width: calc(100vw - 200px - 15px);
+    }
+
+  }
+}
+
